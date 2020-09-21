@@ -1,0 +1,25 @@
+.sidebar {
+  .backIconContainer {
+    position: absolute;
+    right: -12px;
+    top: 10px;
+    cursor: pointer;
+    z-index: 100;
+    i {
+      font-size: 40px;
+      color: aliceblue;
+    }
+  }
+  .hide {
+    display: none;
+  }
+  .hideTitle {
+    color: #000000 !important;
+    opacity: 0.9;
+  }
+
+  .hideSubTitle {
+    color: #737373 !important;
+    opacity: 0.9;
+  }
+}

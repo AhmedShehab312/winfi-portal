@@ -1,0 +1,3 @@
+const STORE_BRANDS = 'STORE_BRANDS';
+
+export { STORE_BRANDS };

@@ -1,0 +1,29 @@
+.LoginContainer {
+  padding: 0 !important;
+  margin-top: 15%;
+  .innerContainer {
+    width: 30%;
+    margin: auto;
+    background: #fbfbfb;
+    padding: 20px;
+    border-radius: 20px;
+    line-height: 3;
+    .logo {
+      margin: auto;
+      text-align: center;
+      img {
+        border: 1px solid #36aaa7;
+        border-radius: 50%;
+        width: 80px;
+      }
+    }
+
+    .Button {
+      text-align: center;
+      margin-top: 40px;
+      Button {
+        background: #36aaa7;
+      }
+    }
+  }
+}

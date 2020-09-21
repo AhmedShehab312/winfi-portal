@@ -1,17 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+
+import "assets/css/nucleo-icons.css";
+import "assets/scss/black-dashboard-react.scss";
+import 'font-awesome/css/font-awesome.min.css';
+import AdminLayout from "layouts/Admin/Admin.js";
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+import { Provider } from 'react-redux'
+import { configureStore } from './store/configureStore';
+import { Errors } from "./components/ComponentModule";
+
+
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+  <Provider store={configureStore}>
+    <BrowserRouter>
+      <AdminLayout />
+    </BrowserRouter>
+    <Errors />
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+  </Provider>,
+  document.getElementById("root")
+);
