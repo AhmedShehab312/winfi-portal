@@ -13,40 +13,40 @@ import Branches from "views/Branches/Branches.js";
 
 
 var SideMenu = [
-    {
-        path: "/dashboard",
-        name: "Dashboard",
-        icon: "fas fa-tachometer-alt",
-        component: Dashboard,
-        role: ['SUPER', 'BRAND', 'BRANCH']
-    },
-    {
-        name: "Configuration",
-        icon: "fa fa-cogs",
-        role: ['SUPER', 'BRAND', 'BRANCH'],
-        subs: [{
-            path: "/CompanyProfile",
-            name: "Company Profile",
-            icon: "fas fa-id-badge",
-            component: CompanyProfile,
-            role: ['SUPER', 'BRAND', 'BRANCH']
-        },
-        {
-            path: "/Brands",
-            name: "Brands",
-            icon: "fa fa-file",
-            component: Brands,
-            role: ['SUPER', 'BRAND']
-        },
-        {
-            path: "/Branches",
-            name: "Branches",
-            icon: "fa fa-code-branch",
-            component: Branches,
-            role: ['SUPER', 'BRAND', 'BRANCH']
-        },
-        ]
-    },
+    // {
+    //     path: "/dashboard",
+    //     name: "Dashboard",
+    //     icon: "fas fa-tachometer-alt",
+    //     component: Dashboard,
+    //     role: ['SUPER', 'BRAND', 'BRANCH']
+    // },
+    // {
+    //     name: "Configuration",
+    //     icon: "fa fa-cogs",
+    //     role: ['SUPER', 'BRAND', 'BRANCH'],
+    //     subs: [{
+    //         path: "/CompanyProfile",
+    //         name: "Company Profile",
+    //         icon: "fas fa-id-badge",
+    //         component: CompanyProfile,
+    //         role: ['SUPER', 'BRAND', 'BRANCH']
+    //     },
+    //     {
+    //         path: "/Brands",
+    //         name: "Brands",
+    //         icon: "fa fa-file",
+    //         component: Brands,
+    //         role: ['SUPER', 'BRAND']
+    //     },
+    //     {
+    //         path: "/Branches",
+    //         name: "Branches",
+    //         icon: "fa fa-code-branch",
+    //         component: Branches,
+    //         role: ['SUPER', 'BRAND', 'BRANCH']
+    //     },
+    //     ]
+    // },
     {
         path: "/Admins",
         name: "Admins",
@@ -54,43 +54,43 @@ var SideMenu = [
         component: Admins,
         role: ['SUPER']
     },
-    {
-        path: "/Reports",
-        name: "Reports",
-        icon: "fa fa-file",
-        component: Reports,
-    },
+    // {
+    //     path: "/Reports",
+    //     name: "Reports",
+    //     icon: "fa fa-file",
+    //     component: Reports,
+    // },
 
-    {
-        path: "/Analytics",
-        name: "Analytics",
-        icon: "fa fa-chart-bar",
-        component: Analytics,
-    },
-    {
-        path: "/Contacts",
-        name: "Contacts",
-        icon: "fa fa-address-book",
-        component: Contacts,
-    },
-    {
-        path: "/InvoicesPayments",
-        name: "Invoices and Payments",
-        icon: "fa fa-database",
-        component: InvoicesPayments,
-    },
-    {
-        path: "/InternetManagement",
-        name: "Internet Management",
-        icon: "fa fa-wifi",
-        component: InternetManagement,
-    },
-    {
-        path: "/Integration",
-        name: "Integration",
-        icon: "fa fa-code",
-        component: Integration,
-    },
+    // {
+    //     path: "/Analytics",
+    //     name: "Analytics",
+    //     icon: "fa fa-chart-bar",
+    //     component: Analytics,
+    // },
+    // {
+    //     path: "/Contacts",
+    //     name: "Contacts",
+    //     icon: "fa fa-address-book",
+    //     component: Contacts,
+    // },
+    // {
+    //     path: "/InvoicesPayments",
+    //     name: "Invoices and Payments",
+    //     icon: "fa fa-database",
+    //     component: InvoicesPayments,
+    // },
+    // {
+    //     path: "/InternetManagement",
+    //     name: "Internet Management",
+    //     icon: "fa fa-wifi",
+    //     component: InternetManagement,
+    // },
+    // {
+    //     path: "/Integration",
+    //     name: "Integration",
+    //     icon: "fa fa-code",
+    //     component: Integration,
+    // },
 
 ];
 

@@ -8,7 +8,7 @@ import './LoginStyle.scss';
 import { HtttpGetDefult } from '../../actions/httpClient';
 import { connect } from 'react-redux';
 import { StoreProfile } from '../../store/actions/ProfileAction';
-import { setLoggedIn } from '../../globals/globals';
+import { setLoggedIn, displayToast } from '../../globals/globals';
 class Login extends React.Component {
     constructor(props) {
         super(props);
@@ -24,14 +24,21 @@ class Login extends React.Component {
 
     submit() {
         const { history, storeProfile } = this.props;
-        HtttpGetDefult('customer/1').then((res) => {
-            if (res) {
-                res.role = 'SUPER';
-                storeProfile(res);
-                history.push('/dashboard');
-                setLoggedIn(true)
-            }
-        })
+        const { UserName, Password } = this.state;
+        if (UserName == "admin" && Password == "admin") {
+            HtttpGetDefult('customer/1').then((res) => {
+                if (res) {
+                    res.role = 'SUPER';
+                    storeProfile(res);
+                    history.push('/Admins');
+                    setLoggedIn(true)
+                }
+            })
+        }
+        else {
+            displayToast('Try again', false);
+        }
+
     }
 
     render() {

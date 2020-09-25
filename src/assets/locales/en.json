@@ -4,7 +4,9 @@
     "Back": "Back",
     "ID": "ID",
     "cancel": "cancel",
-    "noResult": "No Result"
+    "noResult": "No Result",
+    "branch": "Branch",
+    "brand": "Brand"
   },
   "Login": {
     "UserName": "User Name",
@@ -75,6 +77,11 @@
   },
   "Admins": {
     "title": "Admins",
-    "Role": "Role"
+    "Role": "Role",
+    "UserNamePlacholder": "Enter User Name",
+    "NamePlacholder": "Enter name",
+    "editAdmin": "Edit Admin",
+    "selectBrand": "Select Brand",
+    "selectBranch": "Select Branch"
   }
 }

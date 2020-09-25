@@ -2,6 +2,7 @@
 var globalsVariable = {
   languages: [],
   loggedIn: false,
+  roles: [{ id: 1, name: "SUPER" }, { id: 2, name: "BRAND" }, { id: 3, name: "BRANCH" }]
 
 };
 
@@ -12,6 +13,14 @@ export const setLang = lang => {
 
 export const getlang = () => {
   return globalsVariable["currentLang"];
+};
+
+export const setVariable = (key, value) => {
+  globalsVariable[key] = value;
+};
+
+export const getVariable = key => {
+  return globalsVariable[key];
 };
 
 
